@@ -1,0 +1,139 @@
+/* Copy CSS for every CSS files - Start */
+
+/* ======================== */
+
+body {
+    border:0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-y:none;
+    overflow-x:auto;
+    scrollbar-width:2.5px;
+    scroll-behavior:smooth;
+    scrollbar-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+/* Navbar styles */
+
+.navbar {
+    width: 100%;
+    top: 0; /* Position at the top */
+    z-index:-1;
+}
+
+#logo {
+    box-sizing: border-box;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-link:hover,
+#logo:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* ======================== */
+
+/* Copy CSS for every CSS files - End */
+
+#firstImageOfPage {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.image-overlay-content-container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:1000;
+    width:80%;
+    height:80%;
+    background:rgba(255, 255, 255, 0.7);
+    border-radius:0.5rem;
+    padding:0.5rem;
+}
+
+.image-overlay-content-title {
+    font-size: 1.5rem;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag:none;
+}
+
+.image-overlay-content-button-container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:1000;
+    background:rgba(255, 255, 255, 0.7);
+    border-radius:0.5rem;
+}
+
+.image-overlay-content-paragraph-container {
+    box-sizing: border-box;
+    margin-top:5%;
+}
+
+.image-overlay-content-paragraph {
+    visibility:hidden;
+    font-size: 1.2rem;
+    color: #000;
+    padding:5px;
+    font-family:"Space Mono", monospace;
+    font-weight:500;
+    font-style:normal;
+    opacity:0.8;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:8%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index:1000;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag:none;
+    color:#fff;
+    opacity:0.8;
+    padding:1.5rem;
+}

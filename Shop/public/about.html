@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/assets/about.css">
+    <!-- Favicon -->
+    <link rel="icon" type="x-image" href="../src/assets/Aggiungi un'intestazione.png">
+    <title></title>
+    <!-- Title Script -->
+    <script>
+        if (window.location.pathname.includes("index.html")) {
+            document.title = "Gaia Boutique | Home";
+        }
+        else if (window.location.pathname.includes("about.html")) {
+            document.title = "Gaia Boutique | About";
+        }
+        else if (window.location.pathname.includes("shop.html")) {
+          document.title = "Gaia Boutique | Shop";
+        }
+        else if (window.location.pathname.includes("services.html")) {
+          document.title = "Gaia Boutique | Services";
+        }
+        else if (window.location.pathname.includes("contact.html")) {
+          document.title = "Gaia Boutique | Contact";
+        }
+        else if (window.location.pathname.includes("faq.html")) {
+          document.title = "Gaia Boutique | FAQs";
+        }
+    </script>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark-subtle fixed-top">
+        <a class="navbar-brand" href="#" id="logo">Gaia Boutique</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!--Content-->
+    <section>
+      <div class="content">
+        <div class="image-bg">
+          <img id="firstImageOfPage" src="../src/assets/image-2.jpg" title="Image" alt="Image">
+        </div>
+        <div class="image-overlay-content-container">
+          <div class="image-overlay-content-title-container">
+            <h3 class="image-overlay-content-title text-center">About Us</h3>
+          </div>
+          <div class="image-overlay-content-button-container">
+            <button class="image-overlay-content-button btn">Click here to read.</button>
+          </div>
+          <div class="image-overlay-content-paragraph-container">
+            <code class="image-overlay-content-paragraph">
+                Bienvenue dans le monde magique de Gaia Boutique, où le style et l'élégance se mêlent
+                dans une étreinte enveloppante, créant un refuge pour les amoureux de la mode à la
+                recherche d'authenticité et d'originalité. Notre histoire commence il y a seulement quelques
+                années, lorsque un groupe passionné de créatifs a décidé de donner vie à un lieu unique où
+                les vêtements et les accessoires deviennent l'expression d'une personnalité et d'un goût
+                distinctifs.
+                Gaia, la mère terre, inspire notre nom, symbolisant la connexion entre la nature et la mode,
+                la force et la beauté qui émergent de la diversité. Dans cet esprit, chaque pièce de notre
+                collection est choisie avec soin pour refléter la diversité des tendances contemporaines,
+                n'offrant que des produits authentiques et certifiés.
+                Chez Gaia Boutique, nous croyons que le style doit être accessible à tous, sans
+                compromettre la qualité. C'est pourquoi nous garantissons que chacun de nos produits non
+                seulement reflète les dernières tendances, mais est également fabriqué avec des matériaux
+                de haute qualité et une attention particulière aux détails.
+                Nous nous efforçons de fournir une expérience d'achat sans stress et sans souci. Nous
+                offrons la possibilité de retour dans les 30 jours, car nous comprenons que votre style peut
+                évoluer et changer. Notre objectif est de vous faire sentir en confiance pour explorer de
+                nouveaux looks et expérimenter avec la mode.
+                Votre satisfaction est notre priorité absolue, c'est pourquoi nous garantissons une livraison
+                express gratuite sous 24/48 heures. Nous voulons que vous portiez vos nouveaux achats le
+                plus tôt possible, sans avoir à attendre longtemps.
+                Et ce n'est pas tout : nous sommes là pour vous 24 heures sur 24, 7 jours sur 7. Notre
+                équipe de service client est toujours disponible pour répondre à vos questions, vous aider
+                avec les retours ou vous guider dans le choix de la pièce parfaite pour chaque occasion.
+                Gaia Boutique n'est pas simplement un magasin de mode, mais un lieu où votre individualité
+                est célébrée et valorisée. Rejoignez-nous dans ce voyage à la découverte de votre style
+                unique et laissez Gaia Boutique être votre guide fiable dans le monde fascinant de la mode.
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <p class="footer-text">© 2023 Gaia Boutique. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="../src/about.js" defer></script>
+    <script src="../src/logo.js" defer></script>
+</body>
+</html>

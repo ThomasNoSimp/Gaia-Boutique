@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Define the template -->
+<template id="myTemplate">
+    <div>
+      <h2>Hello, {{name}}!</h2>
+      <p>This is a template example.</p>
+    </div>
+  </template>
+  
+  <!-- Use the template -->
+  <div id="templateContainer"></div>
+  
+  <script>
+    // Retrieve the template
+    const template = document.getElementById('myTemplate');
+  
+    // Create a new instance of the template's content
+    const templateContent = template.content.cloneNode(true);
+  
+    // Replace placeholders in the template content
+    const namePlaceholder = templateContent.querySelector('h2');
+    namePlaceholder.textContent = namePlaceholder.textContent.replace('{{name}}', 'John');
+  
+    // Append the modified template content to the container
+    document.getElementById('templateContainer').appendChild(templateContent);
+  </script>
+</body>
+</html>
