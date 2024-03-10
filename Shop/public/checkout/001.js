@@ -5,15 +5,20 @@ const address = document.querySelector('#address');
 const creditCardOption = document.querySelector('#credit_card');
 
 form.addEventListener('submit', (event) => {
-    if (fullName && email && address && creditCardOption) {
+    event.preventDefault();
+
+    if (fullName.value.trim() !== '' && email.value.trim() !== '' && address.value.trim() !== '' && creditCardOption.value.trim() !== '') {
         if (!/^[a-zA-Z ]+$/.test(fullName.value.trim())) {
             alert('Please enter a valid name');
+            return;
         }
         else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value.trim())) {
             alert('Please enter a valid email address');
+            return;
         }
         else if (!/^[#.0-9a-zA-Z\s,-]+$/.test(address.value.trim())) {
             alert('Please enter a valid address');
+            return;
         }
         else {
             window.location.href = 'payment.php';

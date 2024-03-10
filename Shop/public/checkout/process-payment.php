@@ -28,8 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'description' => 'Example charge',
         ]);
 
+        
         // Return a success response
         echo json_encode(['success' => true, 'message' => 'Payment successful']);
+
     } catch (\Stripe\Exception\CardException $e) {
         // Handle card errors
         echo json_encode(['success' => false, 'error' => $e->getMessage()]);
